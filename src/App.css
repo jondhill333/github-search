@@ -3,16 +3,80 @@
 }
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  border: solid red 1px;
-  height: 90vh;
   width: 100vw;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.formContainer {
+  margin-bottom: 20px;;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 250px;
+  height: 30px;
+
+}
+.submit {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.SubmitButtonLabel {
+  height: 30px;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: white;
+  background-color: green;
+  display: flex;
+  text-align: center;
+  text-justify: center;
+  border-radius: 5px;
+  justify-self: center;
+  cursor: pointer;
+  font-weight: 600;
+  
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bookTitle {
+  margin-top: 5px;
 }
 
 .main {
   padding: 10px 5px 10px 5px;
   margin: 5px 5px 5px 5px;
-
 }
+
+.displayArea {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-gap: 10px;;
+}
+
